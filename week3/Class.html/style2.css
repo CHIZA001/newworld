@@ -1,0 +1,46 @@
+body{padding:0%;
+    margin:0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url(planet3.jpg);
+    
+}
+h1{font-size: 45px;
+    text-align: left;
+   color: blueviolet;
+}
+h3{font-size: 25px;
+text-align: left;
+}
+img {width: 100%;
+    border-radius: 30px;
+    height:50%; 
+}
+.main{
+    background-color:blueviolet;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 25px;
+    /* vertical-align: baseline;  */   
+}
+.info{ 
+    max-width: 60%;
+    float:left;        
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    line-height:1.5;
+    background-color: aquamarine;    
+}
+.pic{
+    max-width:25%;
+    float: left;
+    margin-left: 45px;
+    margin-top: 50px;
+    margin-right: 45px;
+    margin-bottom: 100px;
+    flex: 1;
+    display:flex;
+
+}
+

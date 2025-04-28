@@ -1,0 +1,16 @@
+body{background-color:#ffff; text-align: center;
+    justify-content: center;
+}
+.Register{background-color: aqua;
+     width: 48%; 
+     float:left;
+     border: 1px;
+     padding-left: 50px;
+    
+}
+.bio{background-color: darkgray; 
+    width: 48%;
+    float: left;
+}
+*{margin: auto;
+}

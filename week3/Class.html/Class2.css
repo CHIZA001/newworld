@@ -1,0 +1,49 @@
+body{
+    
+}
+.info{ 
+width:45px;
+float: left;
+padding: 25px;
+
+
+}
+.pic{
+    width: 45%;
+    float: left;
+    padding: 25px;
+}
+img{border-radius: 50px;
+
+}
+input{
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width:100%
+}
+.main{
+    margin: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-content: center;
+    justify-content: center;
+}
+textarea{
+    width: 100%;
+    border: 1px;
+    padding: 10px;
+    border-style: solid;
+
+
+}
+label{
+    display: block;
+    
+}
+.menu{
+    width: 65%;
+}
