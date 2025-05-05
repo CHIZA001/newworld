@@ -46,8 +46,48 @@
             <li><a href="#contact">contact</a></li>
             <li><a href="#about">about</a></li>
         </ul>
-    </div>
+    </div> <br>
 
+    <div id="Engineering" class="tabcontent">
+        <h1>Engineering</h1>
+        <p>Short introduction to engineering</p>
+    </div>
+    <div id="Economics" class="tabcontent">
+        <h1>Economics</h1>
+        <p>Short introduction to Economics</p>
+    </div>
+    <div id="Mathematics" class="tabcontent">
+        <h1>Mathematics</h1>
+        <p>Short introduction to Mathematics</p>
+    </div>
+    <div id="Accounting" class="tabcontent">
+        <h1>Accounting</h1>
+        <p>Short introduction to Accounting</p>
+    </div>
+    <button class="tablink" onclick="subject('Engineering',this, 'red')" id="defaultOpen">Engineering</button>
+    <button class="tablink" onclick="subject('Economics',this,'green')">Economics</button>
+    <button class="tablink" onclick="subject('Mathematics',this,'blue')">Mathematics</button>
+    <button class="tablink" onclick="subject('Accounting',this,'orange')">Accounting</button>
+
+    <!-- navigation bar -->
+    <div class="rowbar3">
+        <!--the overlay  -->
+        <div id="thisnav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">clients</a>
+                <a href="#">contact</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <!--  Use any element to open/show the overlay navigation menu -->
+        <h1>Overlay</h1>
+        <p>Overlay navigation</p>
+        <span onclick="openNav()"> &#9776; open</span>
+    </div>
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>
