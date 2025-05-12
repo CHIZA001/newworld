@@ -1,0 +1,32 @@
+body{
+   /* background-color: rgb(226, 143, 34);/*SETTING THE BACKGROUND*/
+    color: green;
+    background-image:url('style001.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding: 20px;
+    
+    
+    /*opacity:50%;*/
+}
+.mainbody{
+    text-align: center;
+    padding: 20px;
+    background-color: aliceblue;}
+.bio{
+    background-color:red;
+    max-width: 40%;   
+    text-align: left;
+} 
+.reg{
+    background-color: blue;
+    text-align: left;
+    max-width: 40%;
+   
+}
+
+
+
+
+
+

@@ -2,92 +2,198 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="rowbar">
-        <!-- horizontal bar -->
-        <div class="icon-bar">
-            <a class="active" href="#"><i class="fa fa-home"></i></a>
-            <a href="/"><i class="fa  fa-comment"></i></a>
-            <a href="/"><i class="fa fa-search"></i></a>
-            <a href="/"><i class="fa fa-globe"></i></a>
-            <a href="/"><i class="fa fa-home"></i></a>
-        </div>
+  <div class="rowbar">
+    <!-- horizontal bar -->
+    <div class="icon-bar">
+      <a class="active" href="#"><i class="fa fa-home"></i></a>
+      <a href="/"><i class="fa  fa-comment"></i></a>
+      <a href="/"><i class="fa fa-search"></i></a>
+      <a href="/"><i class="fa fa-globe"></i></a>
+      <a href="/"><i class="fa fa-home"></i></a>
     </div>
-    <div class="rowbar">
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
+  </div>
+  <div class="rowbar">
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      </a>
+    </div>
+  </div>
+  <div class="rowbar">
+    <div class="topnav">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about" class="split">Help</a>
+    </div>
+
+  </div>
+  <!-- vertical navbar -->
+  <div class="rowbar2">
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">news</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="#about">about</a></li>
+    </ul>
+  </div> <br>
+
+  <div id="Engineering" class="tabcontent">
+    <h1>Engineering</h1>
+    <p>Short introduction to engineering</p>
+  </div>
+  <div id="Economics" class="tabcontent">
+    <h1>Economics</h1>
+    <p>Short introduction to Economics</p>
+  </div>
+  <div id="Mathematics" class="tabcontent">
+    <h1>Mathematics</h1>
+    <p>Short introduction to Mathematics</p>
+  </div>
+  <div id="Accounting" class="tabcontent">
+    <h1>Accounting</h1>
+    <p>Short introduction to Accounting</p>
+  </div>
+  <button class="tablink" onclick="subject('Engineering',this, 'red')" id="defaultOpen">Engineering</button>
+  <button class="tablink" onclick="subject('Economics',this,'green')">Economics</button>
+  <button class="tablink" onclick="subject('Mathematics',this,'blue')">Mathematics</button>
+  <button class="tablink" onclick="subject('Accounting',this,'orange')">Accounting</button>
+  <!-- navigation bar -->
+  <div class="rowbar3">
+    <!--the overlay  -->
+    <div id="thisNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">clients</a>
+        <a href="#">contact</a>
+        <a href="#">FAQ</a>
+      </div>
+    </div>
+    <!--  Use any element to open/show the overlay navigation menu -->
+    <h1>Overlay</h1>
+    <p>Overlay navigation</p>
+    <span onclick="openNav()"> &#9776; open</span>
+  </div>
+  <!-- Class 3 -->
+  <!-- Fixed Header -->
+  <div class="rowbar">
+    <h2>Fixed Navigation bar</h2>
+    <div id="navbar" class="topnav">
+      <a class="active" href="javascript:void(0)">Home</a>
+      <a href="javascript:void(0)">News</a>
+      <a href="javascript:void(0)">Contact</a>
+    </div>
+
+    <div class="content">
+      <h3>Sticky Navigation</h3>
+      <p>The navbar will stick to the top when you reach its scroll position.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque
+        et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>
+  </div>
+  <!-- Mega Menu -->
+  <div class="rowbar">
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <div class="header">
+            <h2>Mega Menu</h2>
+          </div>
+          <div class="row">
+            <div class="column">
+              <h3>Services</h3>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column">
+              <h3>Projects</h3>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column">
+              <h3>Partners</h3>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menue -->
+    <section>
+      <div class="rowbar">
+        <!-- <div class="mobile-container"> -->
+        <div class="topnav">
+          <a href="#home" class="active">Logo</a>
+          <div id="myLinks">
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
-            </a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
-    </div>
-    <div class="rowbar">
-        <div class="topnav">
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about" class="split">Help</a>
+        <div class="text">
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+            concludaturque
+            et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+            repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+            concludaturque
+            et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+            repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+            concludaturque
+            et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+            repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
         </div>
 
-    </div>
-    <!-- vertical navbar -->
-    <div class="rowbar2">
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">news</a></li>
-            <li><a href="#contact">contact</a></li>
-            <li><a href="#about">about</a></li>
-        </ul>
-    </div> <br>
 
-    <div id="Engineering" class="tabcontent">
-        <h1>Engineering</h1>
-        <p>Short introduction to engineering</p>
-    </div>
-    <div id="Economics" class="tabcontent">
-        <h1>Economics</h1>
-        <p>Short introduction to Economics</p>
-    </div>
-    <div id="Mathematics" class="tabcontent">
-        <h1>Mathematics</h1>
-        <p>Short introduction to Mathematics</p>
-    </div>
-    <div id="Accounting" class="tabcontent">
-        <h1>Accounting</h1>
-        <p>Short introduction to Accounting</p>
-    </div>
-    <button class="tablink" onclick="subject('Engineering',this, 'red')" id="defaultOpen">Engineering</button>
-    <button class="tablink" onclick="subject('Economics',this,'green')">Economics</button>
-    <button class="tablink" onclick="subject('Mathematics',this,'blue')">Mathematics</button>
-    <button class="tablink" onclick="subject('Accounting',this,'orange')">Accounting</button>
 
-    <!-- navigation bar -->
-    <div class="rowbar3">
-        <!--the overlay  -->
-        <div id="thisnav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">clients</a>
-                <a href="#">contact</a>
-                <a href="#">FAQ</a>
-            </div>
-        </div>
-        <!--  Use any element to open/show the overlay navigation menu -->
-        <h1>Overlay</h1>
-        <p>Overlay navigation</p>
-        <span onclick="openNav()"> &#9776; open</span>
-    </div>
-    <script src="javascript/script.js"></script>
+        <script src="javascript/script.js"></script>
+    </section>
+
 </body>
 
 </html>

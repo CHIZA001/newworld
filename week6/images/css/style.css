@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    /* font-family: "Dancing Script"; */
+    font-family: 'poppins';
+}
+
+/* navigation bar */
+.topnav {
+    background-color: #6F4E37;
+    overflow: hidden;
+    top: 0;
+    display: block;
+}
+
+.topnav a {
+    float: left;
+    display: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #251102;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #907867;
+}
+
+.topnav a.split {
+    float: right;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    max-width: 85%;
+    padding-top: 50px;
+    margin: auto;
+    clear: both;
+    /* clear: left; */
+    /* clear: right; */
+}
+
+.card {
+    position: relative;
+    width: 20%;
+    float: left;
+    margin: 3px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slider_ovelay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #907867;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+
+.card:hover .slider_overlay {
+    height: 100%;
+}
+
+.slider_text {
+    color: #6F4E37;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bottom_overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container:hover .bottom_overlay {
+    opacity: 1;
+}
+
+.hero {
+    background-image: url('');
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%50%);
+    color: rgb(14, 13, 13);
+}
+.hero_text button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+.hero-text button:hover{
+    background-color: #555;
+    color: white;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;       
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;    
+}
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+@media screen and (max-width:800px){
+    .coloumn{
+        flex: 50%;
+        max-width: 50%;
+    }
+
+}
+  @media screen and (max-width:600px){
+    .coloumn{
+        flex: 100%;
+        max-width: 100%;
+    }
+  }  

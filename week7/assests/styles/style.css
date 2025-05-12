@@ -1,0 +1,195 @@
+/*Google Fonts Dancing Script + poppins  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", serif;
+    /* font-family: "Dancing Script"; */
+}
+
+body {
+    min-height: 100hv;
+    background-color: black;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-family: "Dancing Script";
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    margin: 0 30px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.menu li a:hover {
+    color: #6F4E37;
+}
+
+.btn {
+    display: inline-block;
+    background: none;
+    padding: 5px 20px;
+    border: solid 2px white;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    color: #6F4E37;
+    border-color: #6F4E37;
+}
+
+.hero {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    padding: 0 12%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-img img {
+    width: 100%;
+    transform: scale(0.9) translateY(10px);
+    margin-left: 35px;
+    padding-top: 20px;  
+}
+
+.hero-text h5 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    font-weight: 900;
+    margin: 15px 0;
+}
+
+.hero-text p {
+    max-width: 600px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 30px;
+    color: grey;
+    margin-bottom: 40px;
+}
+
+.btn-filled {
+    background: #6F4E37;
+    border-color: #6F4E37;
+    margin-left: 20px;
+}
+
+.btn-filled:hover {
+    color: black;
+}
+
+.socialmediaicon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 6%;
+}
+
+.socialmediaicon i {
+    color: white;
+    display: block;
+    margin: 35px 0;
+    font-size: 23px;
+    transition: 0.5s;
+}
+
+.socialmediaicon i:hover {
+    transform: translateY(-5px);
+    color: #6F4E37;
+}
+.dropbtn {
+    background-color: #6F4E37;
+    color: white;
+    padding: 16px;
+
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 15px;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    /* background-color: white;     */
+    height: 40%;
+    /* margin-bottom: 50px; */
+
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #6F4E37;
+    color: black;
+    transform: translateY(-5px);
+    transition: 0.5s ease;
+}
