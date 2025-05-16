@@ -38,15 +38,19 @@ body {
 
 .menu {
     display: flex;
+    /* background-color: bisque; */
+    
+    
 }
 
 .menu li a {
     display: inline-block;
     color: white;
-    margin: 0 30px;
+    margin: 15px 30px;
     font-size: 18px;
     font-weight: 500;
     transition: 0.5s;
+    text-transform: uppercase;
 }
 
 .menu li a:hover {
@@ -140,23 +144,23 @@ body {
     transform: translateY(-5px);
     color: #6F4E37;
 }
-.dropbtn {
+.dropdown .dropbtn {
     background-color: #6F4E37;
     color: white;
     padding: 16px;
-
     font-size: 16px;
     cursor: pointer;
     border-radius: 10px;
-    margin: 15px;
-    
+    /* margin: 15px;     */
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+    overflow: hidden;
+    float:right ;
+    /* position: relative;
+    display: inline-block; */
     /* background-color: white;     */
-    height: 40%;
+    /* height: 40%; */
     /* margin-bottom: 50px; */
 
 
@@ -166,14 +170,14 @@ body {
     display: none;
     position: absolute;
     right: 0;
-    background-color: #f9f9f9;
+    background-color: rgba(114, 99, 99, 0.6);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 99;
+    box-shadow: 0px 8px 16px 0px rgb(1, 1, 1);
+    z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: #ffff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
