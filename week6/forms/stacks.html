@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacks</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="rowbar">
+        <div class="topnav">
+            <a href="index.html">Forms</a>
+            <a href="index.html">sign-up</a>
+            <a href="searchbar.html">Searchbar</a>
+            <a href="multi-steps.html">Multi-steps</a>
+            <a href="stacks.html" class="active">Stacks</a>
+            <a href="contactform.html">Contact</a>
+         </div>
+    </div>
+    <div class="container">
+        <div class="stack-container">
+            <div style="text-align: center; margin-bottom:5px;">
+                <h3>Stacked Form</h3>
+                <small>Web form where Form elements like labels and input fields are vertical aligned,<br> with the label input field</small>
+            </div>      
+        </div> 
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="Lname" name="lastname" placeholder="Your last name...">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <input type="submit" value="submit">
+        </form>   
+       </div>        
+    </div>
+    <script src="scripts.js" async defer></script>
+    
+</body>
+</html>

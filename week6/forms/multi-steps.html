@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>MULTI-STEPS FORM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="rowbar">
+        <div class="topnav">
+            <a href="index.html">Logo</a>
+            <a href="index.html">Sign Up</a>
+            <a href="searchbar.html">Searchbar</a>
+            <a href="multi-steps.html" class="active">Multi- Steps</a>
+        </div>
+    </div>
+    <div class="container">
+        <div style="display:block; float:left; width:40%; background-color:#6F4E37; height:500px;">
+
+        </div>
+        <div style="width:60%; float:right;">
+
+
+
+            <form id="regform" action="">
+                <h1>Register</h1>
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">Name:
+                    <p><input placeholder="First Name" oninput="this.className=''"></p>
+                    <p><input placeholder="Last Name" oninput="this.className=''"></p>
+                </div>
+
+                <div class="tab">Contact Info:
+                    <p><input placeholder="E-mail" oninput="this.className =''"></p>
+                    <p><input placeholder="phone" oninput="this.className=''"></p>
+                </div>
+
+                <div class="tab">Birthday:
+                    <p><input placeholder="Day" oninput="this.className=''"></p>
+                    <p><input placeholder="Month" oninput="this.className=''"></p>
+                </div>
+
+                <div class="tab">Login Info:
+                    <p><input placeholder="Username..." oninput="this.className=''"></p>
+                    <p><input placeholder="password..." oninput="this.className=''"></p>
+                </div>
+                <div style="overflow:auto">
+                    <div style="float:right">
+                        <button type="button" id="prevBtn" onclick="nextprev(-1)">Previous</button>
+                        <button type="button" id="nextBtn" onclick="nextprev(1)">Next</button>
+                    </div>
+                </div>
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center; margin-top:40px">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script/script.js" async defer></script>
+</body>
+</html>
